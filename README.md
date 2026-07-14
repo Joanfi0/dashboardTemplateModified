@@ -1,21 +1,60 @@
-Template original: https://github.com/coreui/coreui-free-react-admin-template
-Otras fuentes: 
-https://www.youtube.com/watch?v=qe3mrBmeno8
-https://vite.dev/guide/ 
-https://docs.gitlab.com/development/fe_guide/style/scss/
+# Quick Dashboard
 
-Modificado para que sea un dashboard en el cual se puede agregar un evento con las siguientes caracteristicas:
-- Titulo
-- Date
-- Time
-- Notes
+Dashboard educativo basado en el template gratuito de CoreUI para React, adaptado a una interfaz más simple y enfocada en la gestión de eventos.
 
-Y que se vea reflejado en un panel a la derecha
-Tecnologias utilizadas: React + Vite, Claude para consultas generales y decisiones de estilo, scss para el diseño y git. 
-Para los estilos scss en vez de css 
-Del template quedaron muchas cosas sin utilizar para lo que queria llegar y las borré.
-La idea de este repositorio fue un poco para recordar la estructura de un proyecto React (+ vite), ver como se ve un proyecto ya mas armado
-en vez de los codigos sueltos que aparecen en la documentacion del quick start de React.
+Este proyecto es una práctica para entender mejor la estructura de una aplicación React con Vite, ver cómo se organiza un proyecto más completo y comparar con los ejemplos sueltos de la documentación de React Quick Start.
 
+## Origen
 
-uso unicamente educativo.
+Template original:
+- CoreUI Free React Admin Template
+- https://github.com/coreui/coreui-free-react-admin-template
+- https://coreui.io/
+
+Otras fuentes de consulta:
+- https://www.youtube.com/watch?v=qe3mrBmeno8
+- https://vite.dev/guide/
+- https://docs.gitlab.com/development/fe_guide/style/scss/
+
+## Descripción
+
+La idea original del template fue simplificada para convertirse en un dashboard donde se puede cargar un evento con estas características:
+
+- Título
+- Fecha
+- Hora
+- Notas
+
+Al guardar un evento, este se refleja automáticamente en un panel ubicado a la derecha, mostrando el listado completo y el próximo evento registrado.
+
+## Tecnologías utilizadas
+
+- React
+- Vite
+- SCSS
+- Git
+- CoreUI
+
+También se usó Claude como apoyo para consultas generales y decisiones de estilo.
+
+## Funcionalidades
+
+- Formulario para crear eventos
+- Validación básica de campos obligatorios
+- Panel de resumen con cantidad total de eventos
+- Listado dinámico de eventos
+- Ordenamiento por fecha y hora
+- Interfaz adaptada con SCSS
+
+## Estructura general
+
+- `src/App.jsx`: configuración principal de la app y ruteo
+- `src/layout/DefaultLayout.jsx`: estructura base del dashboard
+- `src/views/dashboard/Dashboard.jsx`: lógica principal para agregar y mostrar eventos
+- `src/scss/style.scss`: estilos globales y visuales del proyecto
+
+## Instalación y uso
+
+```bash
+npm install
+npm run start
