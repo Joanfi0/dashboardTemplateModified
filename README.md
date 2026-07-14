@@ -34,6 +34,7 @@ Al guardar un evento, este se refleja automáticamente en un panel ubicado a la 
 - SCSS
 - Git
 - CoreUI
+- Codex
 
 También se usó Claude como apoyo para consultas generales y decisiones de estilo.
 
