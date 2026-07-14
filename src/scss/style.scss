@@ -1,0 +1,116 @@
+@use "@coreui/coreui/scss/coreui" as * with (
+  $enable-deprecation-messages: false,
+);
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  color: #132238;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.page-shell__intro {
+  max-width: 42rem;
+}
+
+.page-shell__eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #5f7188;
+}
+
+.page-shell__title {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.page-shell__subtitle {
+  color: #607086;
+}
+
+.dashboard-simple__card {
+  border: 1px solid rgba(19, 34, 56, 0.08);
+  border-radius: 1.25rem;
+  box-shadow: 0 18px 40px rgba(19, 34, 56, 0.08);
+}
+
+.dashboard-simple__header {
+  background: transparent;
+  border-bottom: 1px solid rgba(19, 34, 56, 0.08);
+  font-weight: 700;
+}
+
+.dashboard-simple__form {
+  display: grid;
+  gap: 1rem;
+}
+
+.dashboard-simple__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-simple__summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.dashboard-simple__summary-label {
+  font-size: 0.8rem;
+  color: #607086;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.dashboard-simple__summary-value {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #132238;
+}
+
+.dashboard-simple__list {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(19, 34, 56, 0.08);
+}
+
+.dashboard-simple__item {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.05rem;
+  border-color: rgba(19, 34, 56, 0.08);
+}
+
+.dashboard-simple__item-title {
+  font-weight: 800;
+  color: #000000;
+}
+
+.dashboard-simple__item-meta,
+.dashboard-simple__item-note {
+  color: #607086;
+}
+
+@media (max-width: 576px) {
+  .dashboard-simple__summary {
+    grid-template-columns: 1fr;
+  }
+}
